@@ -11,6 +11,7 @@ namespace web.Models
 
         public CertificateDetail()
         {
+
         }
 
         public int Id { get => _id; set => _id = value; }
