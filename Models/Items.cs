@@ -1,4 +1,5 @@
 using System;
+using sign_admin.Models;
 
 namespace web.Models
 {
@@ -11,9 +12,11 @@ namespace web.Models
         private double _price;
         private string _unit;
         private string _description;
+        
 
         public Item()
         {
+            
         }
 
         public int Id { get => _id; set => _id = value; }

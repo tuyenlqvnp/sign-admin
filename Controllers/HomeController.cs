@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using sign_admin.Models;
+using MySql;
+
 
 namespace sign_admin.Controllers
 {
