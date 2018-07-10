@@ -10,8 +10,18 @@ namespace sign_admin.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly AppDbContext _dbContext;
+
+        public  HomeController() {
+            _dbContext = new AppDbContext();
+        }
+
         public IActionResult Index()
         {
+            var customers = _dbContext.Customer;
+            foreach(var  customer in customers) {
+                Console.WriteLine(customer.Name);
+            }
             return View();
         }
 
