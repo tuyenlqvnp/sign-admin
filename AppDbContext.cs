@@ -10,7 +10,7 @@ namespace sign_admin
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=localhost;database=library;user=user;password=password");
+            optionsBuilder.UseMySQL("server=localhost;database=hddt;user=root;password=1234567t");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -18,6 +18,7 @@ namespace sign_admin
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Item> Item { get; set; }
+        
     }
 }

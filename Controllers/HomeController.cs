@@ -20,9 +20,10 @@ namespace sign_admin.Controllers
 
         public IActionResult Index()
         {
-            var customers = _dbContext.Customer;
-            foreach(var  customer in customers) {
-                Console.WriteLine(customer.Name);
+            var items = _dbContext.Item;
+            
+            foreach(var  item in items) {
+                Console.WriteLine(item.Name);
             }
             return View();
         }
