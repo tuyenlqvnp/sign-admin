@@ -10,7 +10,7 @@ using Pomelo.EntityFrameworkCore.MySql;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
-namespace sign_admin
+namespace signadmin
 {
     public class Startup
     {

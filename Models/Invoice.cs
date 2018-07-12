@@ -1,5 +1,5 @@
 using System;
-namespace web.Models
+namespace signadmin.Models
 {
     public class Invoice
     {

@@ -1,7 +1,7 @@
 using System;
-using sign_admin.Models;
+using signadmin.Models;
 
-namespace web.Models
+namespace signadmin.Models
 {
     public class Item
     {

@@ -19,4 +19,3 @@
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.AssemblyInfo.cs
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.dll
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.pdb
-/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.csprojResolveAssemblyReference.cache
