@@ -12,15 +12,15 @@ namespace sign_admin.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly AppDbContext _dbContext;
+        private readonly AppDbContext _appDbContext;
 
-        public  HomeController() {
-            _dbContext = new AppDbContext();
+        public  HomeController(AppDbContext appDbContext) {
+            _appDbContext = appDbContext;
         }
 
         public IActionResult Index()
         {
-            var items = _dbContext.Item;
+            var items = _appDbContext.Item;
             
             foreach(var  item in items) {
                 Console.WriteLine(item.Name);
