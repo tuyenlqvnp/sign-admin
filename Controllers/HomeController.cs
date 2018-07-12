@@ -5,7 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using signadmin.Models;
-using MySql;
 
 
 namespace signadmin.Controllers

@@ -1,7 +1,7 @@
 using System;
 using signadmin.Models;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace signadmin.DAO
 {
@@ -10,7 +10,7 @@ namespace signadmin.DAO
         private AppDbContext _appDbContext;
 
         public struct Filter {
-            public int IdCompany;
+            public string IdCompany;
         }
 
         public ItemDAO(AppDbContext appDbContext) {
@@ -48,6 +48,9 @@ namespace signadmin.DAO
             if (pageSize == 0) {
                 pageSize = Constants.PAGE_SIZE;
             }
+            IQueryable<Item> query = _appDbContext.Item.Where(m => m.Id_company == filter.IdCompany);
+            query = query.Skip((page - 1) * pageSize).Take(pageSize);
+            list = query.ToList();
             return list;
         }
         
