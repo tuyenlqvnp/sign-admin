@@ -24,6 +24,7 @@ namespace sign_admin.Controllers
             
             foreach(var  item in items) {
                 Console.WriteLine(item.Name);
+                Console.WriteLine(item.Id_company);
             }
             return View();
         }
