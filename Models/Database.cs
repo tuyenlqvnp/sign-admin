@@ -1,7 +1,7 @@
 using System;
 using MySql.Data;
 using MySql.Data.MySqlClient;
-namespace web.Models
+namespace signadmin.Models
 {
     public class Database
     {

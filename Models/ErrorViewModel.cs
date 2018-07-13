@@ -1,6 +1,6 @@
 using System;
 
-namespace sign_admin.Models
+namespace signadmin.Models
 {
     public class ErrorViewModel
     {
