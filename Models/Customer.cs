@@ -16,6 +16,8 @@ namespace signadmin.Models
         private string _bank_name;
         private string _phone;
         private string _fax;
+        private string _cus_code;
+        private string _description;
 
         public Customer()
         {
