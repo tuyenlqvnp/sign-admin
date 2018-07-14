@@ -13,4 +13,10 @@ namespace signadmin.DAO
         public string Description;
         public int Id;
     }
+
+    public class AccessDetailFilterCriterio {
+        public int Id;
+        public int IdAccount;
+        public int IdAccess;
+    }
 }

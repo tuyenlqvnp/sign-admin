@@ -12734,7 +12734,7 @@
       "projectName": "sign-admin",
       "projectPath": "/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/sign-admin.csproj",
       "packagesPath": "/Users/thaibao/.nuget/packages/",
-      "outputPath": "/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj",
+      "outputPath": "/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -12762,19 +12762,19 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.5"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )"
           }
         },
         "imports": [

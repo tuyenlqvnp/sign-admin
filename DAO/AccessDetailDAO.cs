@@ -4,34 +4,34 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace signadmin.DAO
-{
-    public class AccessDAO
+{   
+    public class AccessDetailDAO
     {
         private AppDbContext _appDbContext;
-        public AccessDAO(AppDbContext appDbContext)
+		public AccessDetailDAO(AppDbContext appDbContext)
         {
             this._appDbContext = appDbContext;
         }
 
-        public Access Add(Access item)
+		public AccessDetail Add(AccessDetail item) 
         {
-            _appDbContext.Access.Add(item);
+			_appDbContext.AccessDetail.Add(item);
             _appDbContext.SaveChanges();
             return item;
         }
 
-        public Access Update(Access item)
+		public AccessDetail Update(AccessDetail item)
         {
-            _appDbContext.Access.Update(item);
+			_appDbContext.AccessDetail.Update(item);
             _appDbContext.SaveChanges();
             return item;
         }
 
-        public bool Delete(Access item)
+		public bool Delete(AccessDetail item)
         {
             try
             {
-                _appDbContext.Access.Remove(item);
+				_appDbContext.AccessDetail.Remove(item);
                 _appDbContext.SaveChanges();
                 return true;
             }
@@ -42,37 +42,37 @@ namespace signadmin.DAO
             }
         }
 
-        public List<Access> GetList(AccessFilterCriterio filter, int page, int pageSize)
+		public List<AccessDetail> GetList(AccessDetailFilterCriterio filter, int page, int pageSize)
         {
-            List<Access> list = new List<Access>();
+			List<AccessDetail> list = new List<AccessDetail>();
             if (pageSize == 0)
             {
                 pageSize = Constants.PAGE_SIZE;
             }
 
-            IQueryable<Access> query = _appDbContext.Access;
+			IQueryable<AccessDetail> query = _appDbContext.AccessDetail;
             if (filter.Id != 0)
             {
                 query.Where(m => m.Id == filter.Id);
             }
-            if (filter.Url != "")
+            if (filter.IdAccount != 0)
             {
-                query.Where(m => m.Url == filter.Url);
+				query.Where(m => m.Id_account == filter.IdAccount);
             }
-            if (filter.Description != "")
+            if (filter.IdAccess != 0)
             {
-                query.Where(m => m.Url.Contains(filter.Url));
+				query.Where(m => m.Id_access == (filter.IdAccess));
             }
             query = query.Skip((page - 1) * pageSize).Take(pageSize);
             list = query.ToList();
             return list;
         }
 
-        public Access GetById(int id)
+		public AccessDetail GetById(int id)
         {
-            AccessFilterCriterio filter = new AccessFilterCriterio();
+			AccessDetailFilterCriterio filter = new AccessDetailFilterCriterio();
             filter.Id = id;
-            List<Access> items = this.GetList(filter, 0, 1);
+            List<AccessDetail> items = this.GetList(filter, 0, 1);
             if (items.Count > 0)
                 return items[0];
             return null;
