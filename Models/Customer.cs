@@ -35,6 +35,7 @@ namespace signadmin.Models
         public string Bank_name { get => _bank_name; set => _bank_name = value; }
         public string Phone { get => _phone; set => _phone = value; }
         public string Fax { get => _fax; set => _fax = value; }
+        public string CusCode { get => _cus_code; set => _cus_code = value; }
+        public string Description { get => _description; set => _description = value; }
     }
-
 }

@@ -12724,23 +12724,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/lamtuyen/.nuget/packages/": {},
+    "/Users/thaibao/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lamtuyen/Public/tuyen/sign-admin/sign-admin.csproj",
+      "projectUniqueName": "/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/sign-admin.csproj",
       "projectName": "sign-admin",
-      "projectPath": "/Users/lamtuyen/Public/tuyen/sign-admin/sign-admin.csproj",
-      "packagesPath": "/Users/lamtuyen/.nuget/packages/",
-      "outputPath": "/Users/lamtuyen/Public/tuyen/sign-admin/obj/",
+      "projectPath": "/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/sign-admin.csproj",
+      "packagesPath": "/Users/thaibao/.nuget/packages/",
+      "outputPath": "/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/lamtuyen/.nuget/NuGet/NuGet.Config"
+        "/Users/thaibao/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -12762,18 +12762,19 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0",
+            "autoReferenced": true
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "[2.0.5, )"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "[2.0.0, )",
-            "autoReferenced": true
+            "version": "2.0.5"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
-            "version": "[2.1.1, )"
+            "version": "2.1.1"
           }
         },
         "imports": [

@@ -9,10 +9,6 @@ namespace signadmin.DAO
     {
         private AppDbContext _appDbContext;
 
-        public struct Filter {
-            public string IdCompany;
-        }
-
         public ItemDAO(AppDbContext appDbContext) {
             this._appDbContext = appDbContext;
         }
@@ -43,15 +39,36 @@ namespace signadmin.DAO
             }
         }
 
-        public List<Item> GetList(Filter filter, int page, int pageSize) {
+        public List<Item> GetList(ItemFilterCriterio filter, int page, int pageSize)
+        {
             List<Item> list = new List<Item>();
-            if (pageSize == 0) {
+            if (pageSize == 0)
+            {
                 pageSize = Constants.PAGE_SIZE;
             }
-            IQueryable<Item> query = _appDbContext.Item.Where(m => m.Id_company == filter.IdCompany);
+
+            IQueryable<Item> query = _appDbContext.Item;
+            if (filter.Id != 0)
+            {
+                query.Where(m => m.Id == filter.Id);
+            }
+            if (filter.IdCompany != "")
+            {
+                query.Where(m => m.Id_company == filter.IdCompany);
+            }
             query = query.Skip((page - 1) * pageSize).Take(pageSize);
             list = query.ToList();
             return list;
+        }
+
+        public Item GetById(int id)
+        {
+            ItemFilterCriterio filter = new ItemFilterCriterio();
+            filter.Id = id;
+            List<Item> items = this.GetList(filter, 0, 1);
+            if (items.Count > 0)
+                return items[0];
+            return null;
         }
         
     }
