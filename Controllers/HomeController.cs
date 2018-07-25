@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using signadmin.Models;
+using signadmin.DAO;
 
 
 namespace signadmin.Controllers
@@ -19,12 +20,8 @@ namespace signadmin.Controllers
 
         public IActionResult Index()
         {
-            var items = _appDbContext.Item;
-            
-            foreach(var  item in items) {
-                Console.WriteLine(item.Name);
-                Console.WriteLine(item.Id_company);
-            }
+            ItemDAO dao = new ItemDAO(this._appDbContext);
+            List<Item> list = dao.GetList(new ItemFilterCriterio(), 1, 10);
             return View();
         }
 

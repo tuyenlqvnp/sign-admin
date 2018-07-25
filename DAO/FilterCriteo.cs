@@ -3,7 +3,7 @@ namespace signadmin.DAO
 {
     public class ItemFilterCriterio
     {
-        public string IdCompany;
+        public int IdCompany;
         public int Id;
     }
 

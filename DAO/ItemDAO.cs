@@ -52,7 +52,7 @@ namespace signadmin.DAO
             {
                 query.Where(m => m.Id == filter.Id);
             }
-            if (filter.IdCompany != "")
+            if (filter.IdCompany != 0)
             {
                 query.Where(m => m.Id_company == filter.IdCompany);
             }

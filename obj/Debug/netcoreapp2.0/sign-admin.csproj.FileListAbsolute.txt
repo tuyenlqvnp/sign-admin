@@ -9,13 +9,13 @@
 /Users/lamtuyen/Public/tuyen/sign-admin/obj/Debug/netcoreapp2.0/sign-admin.AssemblyInfo.cs
 /Users/lamtuyen/Public/tuyen/sign-admin/obj/Debug/netcoreapp2.0/sign-admin.dll
 /Users/lamtuyen/Public/tuyen/sign-admin/obj/Debug/netcoreapp2.0/sign-admin.pdb
-/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.csproj.CoreCompileInputs.cache
-/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.AssemblyInfoInputs.cache
-/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.AssemblyInfo.cs
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/bin/Debug/netcoreapp2.0/sign-admin.deps.json
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/bin/Debug/netcoreapp2.0/sign-admin.runtimeconfig.json
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/bin/Debug/netcoreapp2.0/sign-admin.runtimeconfig.dev.json
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/bin/Debug/netcoreapp2.0/sign-admin.dll
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/bin/Debug/netcoreapp2.0/sign-admin.pdb
+/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.csproj.CoreCompileInputs.cache
+/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.AssemblyInfoInputs.cache
+/Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.AssemblyInfo.cs
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.dll
 /Users/thaibao/Projects/tuyenlqvnp/sign-admin.git/obj/Debug/netcoreapp2.0/sign-admin.pdb
